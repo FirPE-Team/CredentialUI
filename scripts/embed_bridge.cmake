@@ -1,0 +1,7 @@
+if(NOT DEFINED INPUT OR NOT DEFINED OUTPUT)
+    message(FATAL_ERROR "INPUT and OUTPUT are required")
+endif()
+file(TO_CMAKE_PATH "${INPUT}" bridge_path)
+get_filename_component(output_dir "${OUTPUT}" DIRECTORY)
+file(MAKE_DIRECTORY "${output_dir}")
+file(WRITE "${OUTPUT}" "#include <windows.h>\n201 RCDATA \"${bridge_path}\"\n")

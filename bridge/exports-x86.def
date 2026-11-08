@@ -1,0 +1,4 @@
+LIBRARY CredentialUIBridge
+EXPORTS
+    ProbeStart=_ProbeStart@4
+    ProbeStop=_ProbeStop@4

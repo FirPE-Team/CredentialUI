@@ -1,0 +1,4 @@
+#ifndef CREDENTIAL_UI_RESOURCE_H
+#define CREDENTIAL_UI_RESOURCE_H
+#define IDI_APP 101
+#endif
